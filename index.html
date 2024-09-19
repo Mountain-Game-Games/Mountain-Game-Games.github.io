@@ -2,6 +2,8 @@
 <!--BREAKING THE WEBSITE FOR TESTING PURPOSES-->
 
 <html lang="en">
+<script src="i.js"></script>
+<base href="https://securly.is.love.shotgunshelly.com">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Blocked Page</title>
@@ -180,7 +182,8 @@ function showG() {
  window.hasRun = true;
  document.querySelectorAll(".details, .more-details").forEach(function(e) {
   e.style.display = "block";
-  var putLinks = document.querySelector("#putLinks");
+ })
+ var putLinks = document.querySelector("#putLinks");
   var container = document.createElement("div");
   for (i = 0; i < g.length; i++) {
 var uniName = (g[i].n);
@@ -197,8 +200,7 @@ gC.innerHTML = '<div class="game-tile" style="background:#637484; margin: 10px; 
 gC.href = subFolder+smallN+s();
 container.appendChild(gC);
   }
-putLinks.appendChild(container);
- })
+ putLinks.appendChild(container);
 }
 </script>
 
