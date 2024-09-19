@@ -1,8 +1,9 @@
-
 <!DOCTYPE html>
 <!--BREAKING THE WEBSITE FOR TESTING PURPOSES-->
 
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Blocked Page</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noindex">
@@ -44,9 +45,9 @@
             <!--IF SHOW LOGIN OR TWL OR CONTACT ADMIN IS TRUE-->
             <div class="newGrid_container shadow-container">
                 <div class="row">
-                                                    <div class="top-logo"> <img src="" alt="School Logo"> </div>
-                                                <h1 class="text-center heading">Looks like this page isn't allowed</h1>
-                        <div class="schlblockMessage mt-0 text-center">This page has been blocked</div>                        
+                                                    <div class="top-logo"> <img src="mountainDark.png" alt="School Logo" style="width:50px;height:auto;"> </div>
+                                                <h1 class="text-center heading">Looks like this page isn't blocked</h1>
+                        <div class="schlblockMessage mt-0 text-center">This page is Mountain Game Games</div>                        
                 </div>
 
                 <div class="row">
@@ -60,18 +61,16 @@
                         <section class="rhs-container">
                         <div id="blockDetails" class="block-details">
                                 <h2 class="details-heading">Blocking details</h2>
-                                <div class="regularBody"><span>URL: </span><span class="medium">learn.go.to.class.shotgunshelly.com</span></div>
+                                <div class="regularBody"><span>URL: </span><span class="medium">securly.is.love.shotgunshelly.com</span></div>
                                 <div class="regularBody"><span>Reason: </span><span class="medium">Blocked by Category</span></div>
-                                                                                        <a href="" role="button" id="show-more" class="regularBody medium" style="display: inline-block;" aria-expanded="true">Show more</a>
+                                                                                        <a onclick="showG()" role="button" id="show-more" class="regularBody medium" style="display: inline-block;" aria-expanded="true">Show more</a>
                                                         <div class="more-details" style="display: none;">
                                                                                                     <div class="details" style="display: none;"><span>Category: </span><span>Games</span></div>
-                                                                <div class="details" style="display: none;"><span>User email: </span><span></span></div>
+                                                                <div class="details" style="display: none;"><span>User email: </span><span>idontknow@gmail.com</span></div>
                                 <div class="details" style="padding-bottom: 24px; display: none;">
                                     <span>Policy: </span><span>Students</span>
                                 </div>
-                                <div class="details" style="display: none;"><span>Date and time: </span><span>Thursday, 09/19/24, 10:32AM MDT</span></div>
-                                <div class="details" style="display: none;"><span>External IP: </span><span></span></div>
-                                <div class="details" style="display: none;"><span>Filtering methods: </span><span>Extension</span></div>
+                                <div class="details" style="display: none;" id="putLinks"></div>
                             </div>
                             <div class="clearfix"></div>
 
@@ -117,7 +116,7 @@
                                             <span class="pr-4"><img src="https://useast-www.securly.com/app/images/warning-icon.svg" alt=""></span>
                                             <span class="regularBody m-0">Sorry, your request for access failed to send. Please try again.</span>
                                         </div>
-                                        <button class="ask-btn medium pt-4" aria-expanded="false">Ask for permission</button>
+                                        <button class="ask-btn medium pt-4" aria-expanded="false">Click "Show more"</button>
                                         <span class="navigation-button ss-navigatedown"></span>
                                     </a>
                             </div>
@@ -166,5 +165,41 @@
 
 
             </div>
+
+<script>
+var g = `W3sibiI6IlRoZSBNb3VudGFpbiBHYW1lIiwic24iOiJtb3VudGFpbiIsIm0iOiJtb3VudGFpbk5vRmFkZS5wbmciLCJkIjoiaWRsZSBjbGlja2VyIn0seyJuIjoiUmV0cm8gQm93bCIsInNuIjoicmV0cm8iLCJtIjoicmV0cm9ib3dsLnBuZyIsImQiOiJzcG9ydHMgZm9vdGJhbGwifSx7Im4iOiJTbG9wZSIsInNuIjoic2xvcGUifSx7Im4iOiJUdWJlIEp1bXBlcnMiLCJzbiI6Imp1bXBlcnMiLCJtIjoidHViZS1qdW1wZXJzLnBuZyJ9LHsibiI6IjIwNDgiLCJkIjoicHV6emxlIn0seyJuIjoiVGV0cmlzIiwiZCI6InB1enpsZSJ9LHsibiI6IlRvbSBBbmQgSmVycnkiLCJzbiI6InRhbmRqIiwibSI6InRvbS1hbmQtamVycnkucG5nIiwiZCI6InNpbXBsZSJ9LHsibiI6Ikdlb21ldHJ5IERhc2ggMSAmIDIiLCJzbiI6ImRhc2hIb21lIiwibSI6Imdlb21ldHJ5LWRhc2gucG5nIiwiZCI6Imp1bXBpbmcgcnVuIiwiZiI6ImRhc2gifSx7Im4iOiJEdWNrIExpZmUifSx7Im4iOiJGbG9vZCBSdW5uZXIiLCJzbiI6ImZsb29kUnVubmVyIiwibSI6ImZsb29kLXJ1bm5lci5wbmcifSx7Im4iOiJFbGVjdHJvIE1hbiIsInNuIjoiRWxlY3Ryb01hbiIsIm0iOiJlbGVjdHJpYy1tYW4ucG5nIn0seyJuIjoiV29ybGQncyBIYXJkZXN0IEdhbWUiLCJzbiI6Ildvcmxkc0hhcmRlc3RHYW1lIiwibSI6Indvcmxkcy1oYXJkZXN0LWdhbWUucG5nIn0seyJuIjoiMSBvbiAxIFNvY2NlciIsInNuIjoiMXYxU29jY2VyIiwibSI6IjEtb24tMS1zb2NjZXIucG5nIiwiZCI6InNwb3J0cyJ9LHsibiI6IkNoZXNzIiwiZCI6ImJvYXJkIn0seyJuIjoiU25ha2UiLCJkIjoiZ29vZ2xlIn0seyJuIjoiQ29va2llIENsaWNrZXIiLCJzbiI6ImNvb2tpZSJ9LHsibiI6IlQtcmV4IEdhbWUiLCJzbiI6InQtcmV4LWdhbWUiLCJoIjoiLyIsIm0iOiJ0LXJleC5qcGVnIn0seyJuIjoiTWFkYWxpbiBTdHVudCBDYXJzIDIiLCJzbiI6IlN0dW50Q2FycyIsIm0iOiJtYWRhbGluLXN0dW50LWNhcnMtMi5qcGVnIiwiZCI6ImNhcnMifSx7Im4iOiIxMCBNb3JlIEJ1bGxldHMiLCJzbiI6IjEwbW9yZUJ1bGxldHMiLCJtIjoiMTAucG5nIn0seyJuIjoiQnVycml0byBCaXNvbiIsInNuIjoiQnVycml0b0Jpc29uIiwibSI6ImJ1cnJpdG8ucG5nIn0seyJuIjoiTW90by1YM00gMSAmIDQiLCJzbiI6Im1vdG94M21ob21lIiwibSI6Im1vdG8teDNtLnBuZyJ9LHsibiI6IlR1bm5lbCBSdXNoIiwic24iOiJUdW5uZWwtUnVzaCIsIm0iOiJ0dW5uZWxydXNoLnBuZyJ9LHsibiI6Ikdvb2dsZSBCYXNlYmFsbCIsInNuIjoiR29vZ2xlLUJhc2ViYWxsIiwibSI6Imdvb2dsZS1iYXNlYmFsbC5wbmcifSx7Im4iOiJEcmlmdCBIdW50ZXJzIiwic24iOiJEcmlmdC1IdW50ZXJzIiwibSI6ImRyaWZ0LWh1bnRlcnMucG5nIn0seyJuIjoiRmlyZWJveSBBbmQgV2F0ZXJnaXJsIiwic24iOiJGaXJlLUJveS1XYXRlci1HaXJsIiwiaCI6Ii8iLCJtIjoiZmlyZXdhdGVyLnBuZyJ9LHsibiI6IkJpZyBUb3dlciBUaW55IFNxdWFyZSIsInNuIjoiQmlnVG93ZXJUaW55U3F1YXJlIiwibSI6IlRpbnlTcXVhcmUucG5nIn0seyJuIjoiQmFza2V0YmFsbCBTdGFycyIsInNuIjoiQmFza2V0LUJhbGwtU3RhcnMiLCJtIjoiYmFza2V0YmFsbHN0YXJzLnBuZyJ9LHsibiI6IkRlZXBlc3QgU3dvcmQifSx7Im4iOiJTdGlja21hbiBDbGltYiAxJjIiLCJzbiI6InN0aWNrbWFuY2xpbWJtYWluIiwibSI6InN0aWNrbWFuY2xpbWIucG5nIn0seyJuIjoiSnVzdCBGbGlwIn0seyJuIjoiSWRsZSBNaW5lciJ9LHsibiI6IkxhdW5jaGJhbGwifSx7Im4iOiJQYXBlci5pbyAyIiwic24iOiJwYXBlcmlvMiJ9LHsibiI6IkFpciBIb2NrZXkifSx7Im4iOiJXb3JkbGUifSx7Im4iOiJQYWNtYW4ifSx7Im4iOiJUaGUgT3JlZ29uIFRyYWlsIiwic24iOiJ0aGVvcmVnb250cmlhbCJ9LHsibiI6Ik1vdW50YWluIE1hemUifSx7Im4iOiJTdGFjayJ9LHsibiI6IlJvbGxpbmcgRm9yZXN0cyIsInNuIjoiZm9yZXN0cyJ9LHsibiI6IlJ1biAzIn0seyJuIjoiU25vd2JhbGwgRmlnaHQifSx7Im4iOiJSYWZ0IFdhcnMgMSAmIDIiLCJzbiI6InJhZnR3YXJzaG9tZSIsIm0iOiJyYWZ0d2Fycy5wbmcifSx7Im4iOiJHYW1lIEluc2lkZSBBIEdhbWUifSx7Im4iOiJUaGVyZSBJcyBObyBHYW1lIn0seyJuIjoiRWNvbm9taWNhbCAxICYgMiIsInNuIjoiZWNvbm9taWNhbGhvbWUiLCJtIjoiZWNvbm9taWNhbC5wbmcifSx7Im4iOiJDZWxsIE1hY2hpbmUifSx7Im4iOiJDYXQgTmluamEifSx7Im4iOiJDZWxzZXN0ZSIsInNuIjoiY2VsZXN0ZSJ9LHsibiI6IlN1YndheSBTdXJmZXJzIn0seyJuIjoiRWRnZSBOb3QgRm91bmQifSx7Im4iOiJDdWJlZmllbGQifSx7Im4iOiJSYWRpdXMgUmFpZCJ9LHsibiI6IlBhcGVyeSBQbGFuZXMifSx7Im4iOiJTd2VydmUifSx7Im4iOiJBIERhbmNlIE9mIEZpcmUgQW5kIEljZSJ9LHsibiI6IkdyZXkgQm94IFRlc3RpbmcifSx7Im4iOiJUYW51a2kgU3Vuc2V0In0seyJuIjoiTmluamEgVlMgRXZpbGNvcnAifSx7Im4iOiJFdmlsIEdsaXRjaCJ9LHsibiI6IkJhc2tldCBSYW5kb20ifSx7Im4iOiJTdHVtYmxlIEd1eXMifSx7Im4iOiJKb2hubnkgVXBncmFkZSJ9LHsibiI6IkNyb3NzeSBSb2FkIn0seyJuIjoiQ2lyY2xlIE8ifSx7Im4iOiJNYXJpbyJ9LHsibiI6Ik92byJ9LHsibiI6IlRhbmsgVHJvdWJsZSJ9LHsibiI6IlNvY2NlciBSYW5kb20ifSx7Im4iOiJQaW5nIFBvbmcgQ2hhb3MifSx7Im4iOiJTdGlja21hbiBIb29rIn0seyJuIjoiVm9sbGV5IFJhbmRvbSJ9LHsibiI6IlBva2Vtb24ifSx7Im4iOiJCaXRsaWZlIn0seyJuIjoiQXdlc29tZSBUYW5rcyJ9LHsibiI6Ik9mZmxpbmUgUGFyYWRpc2UifSx7Im4iOiJEcml2ZSBNYWQifSx7Im4iOiJFbGFzdGljIE1hbiJ9LHsibiI6Ikp1c3QgT25lIEJvc3MifSx7Im4iOiJJdHMgUmFpbmluZyBCb3hlcyJ9LHsibiI6IlNwYWNlYmFyIENsaWNrZXIifSx7Im4iOiJJbXBvc3NpYmxlIFF1aXoifSx7Im4iOiJTb2xpdGFpcmUifSx7Im4iOiJCbG9vbnMgVG93ZXIgRGVmZW5zZSJ9LHsibiI6IkxlYXJuaW5nIn0seyJuIjoiU3RpY2ttYW4gTGlmZSJ9LHsibiI6IlBhcGFzIEdhbWVzIn0seyJuIjoiSGVucnkgU3RpY2ttaW4ifSx7Im4iOiJCbG94b3J6In0seyJuIjoiU3VwZXIgTWFyaW8gNjQifSx7Im4iOiJUcmltcHMifSx7Im4iOiJVc2UgQm94bWVuIn0seyJuIjoiRnJ1aXQgTmluamEifSx7Im4iOiJJZGxlIEJyZWFrb3V0In0seyJuIjoiTGVhcm4gdG8gRmx5In0seyJuIjoiVG9tYiBPZiBUaGUgTWFzayJ9LHsibiI6IlRoaXMgaXMgdGhlIE9ubHkgTGV2ZWwifSx7Im4iOiJTbG9wZSAyIn1d`;
+g = JSON.parse(atob(g));
+
+window.hasRun = false;
+
+function showG() {
+ if (window.hasRun) {
+  return;
+ }
+ 
+ window.hasRun = true;
+ document.querySelectorAll(".details, .more-details").forEach(function(e) {
+  e.style.display = "block";
+  var putLinks = document.querySelector("#putLinks");
+  var container = document.createElement("div");
+  for (i = 0; i < g.length; i++) {
+var uniName = (g[i].n);
+uniName = uniName.toLowerCase();
+uniName = uniName.replace(/\s/g, '');
+var smallN = (g[i].sn || uniName);
+var img = (g[i].m || (smallN+'.png'));
+var desc = (g[i].d || '');
+function f() {if (g[i].f) {return (g[i].f+'/')} else {return ''}}
+function s() {if (g[i].h) {return (g[i].h)} else {return '.html'}}
+var subFolder = (f());
+var gC = document.createElement("a");
+gC.innerHTML = '<div class="game-tile" style="background:#637484; margin: 10px; display:inline-block;"><span style="font-size:0px;position:fixed">'+desc+'</span><div><img class="game-icon" src="'+img+'" loading="lazy" alt="'+g[i].n+'" style="width:30px;height:30px"></div><span class="game-title">'+g[i].n+'</span></div>';
+gC.href = subFolder+smallN+s();
+container.appendChild(gC);
+  }
+putLinks.appendChild(container);
+ })
+}
+</script>
 
 <div id="hl-aria-live-message-container" aria-live="polite" class="visually-hidden"></div><div id="hl-aria-live-alert-container" role="alert" aria-live="assertive" class="visually-hidden"></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowmode="open"><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html><!--END BLOCKED TEMPLATE-->
