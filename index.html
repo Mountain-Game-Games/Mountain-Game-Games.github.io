@@ -47,7 +47,7 @@
                 <div class="row">
                                                     <div class="top-logo"> <img src="mountainDark.png" alt="School Logo" style="width:50px;height:auto;"> </div>
                                                 <h1 class="text-center heading">Looks like this page <b>isn't</b> blocked</h1>
-                        <div class="schlblockMessage mt-0 text-center">This page is <b>Mountain Game Games</b></div>                        
+                        <div class="schlblockMessage mt-0 text-center">This page <b>isn't</b> blocked</div>                        
                 </div>
 
                 <div class="row">
@@ -63,7 +63,7 @@
                                 <h2 class="details-heading">Blocking details</h2>
                                 <div class="regularBody"><span>URL: </span><span class="medium">securly.is.love.shotgunshelly.com</span></div>
                                 <div class="regularBody"><span>Reason: </span><span class="medium">Blocked by Category</span></div>
-                                                                                        <a onclick="showG()" role="button" id="show-more" class="regularBody medium" style="display: inline-block;" aria-expanded="true">Show more</a>
+                                                                                        <a onclick="displayPizzaDetails()" role="button" id="show-more" class="regularBody medium" style="display: inline-block;" aria-expanded="true">Show more</a>
                                                         <div class="more-details" style="display: none;">
                                                                                                     <div class="details" style="display: none;"><span>Category: </span><span>Games</span></div>
                                                                 <div class="details" style="display: none;"><span>User email: </span><span>idontknow@gmail.com</span></div>
@@ -172,33 +172,8 @@ g = JSON.parse(atob(g));
 
 window.hasRun = false;
 
-function showG() {
- if (window.hasRun) {
-  return;
- }
- 
- window.hasRun = true;
- document.querySelectorAll(".details, .more-details").forEach(function(e) {
-  e.style.display = "block";
- })
- var putLinks = document.querySelector("#putLinks");
-  var container = document.createElement("div");
-  for (i = 0; i < g.length; i++) {
-var uniName = (g[i].n);
-uniName = uniName.toLowerCase();
-uniName = uniName.replace(/\s/g, '');
-var smallN = (g[i].sn || uniName);
-var img = (g[i].m || (smallN+'.png'));
-var desc = (g[i].d || '');
-function f() {if (g[i].f) {return (g[i].f+'/')} else {return ''}}
-function s() {if (g[i].h) {return (g[i].h)} else {return '.html'}}
-var subFolder = (f());
-var gC = document.createElement("a");
-gC.innerHTML = '<div class="game-tile" style="background:#637484; margin: 10px; display:inline-block;"><span style="font-size:0px;position:fixed">'+desc+'</span><div><img class="game-icon" src="'+img+'" loading="lazy" alt="'+g[i].n+'" style="width:30px;height:30px"></div><span class="game-title">'+g[i].n+'</span></div>';
-gC.href = subFolder+smallN+s();
-container.appendChild(gC);
-  }
- putLinks.appendChild(container);
+function displayPizzaDetails() {
+const _0x10fcba=_0x5bc6;function _0x5bc6(_0x135618,_0x1c71c2){const _0x3fd3be=_0x3fd3();return _0x5bc6=function(_0x5bc6b0,_0x42b78a){_0x5bc6b0=_0x5bc6b0-0x13e;let _0x151fd6=_0x3fd3be[_0x5bc6b0];return _0x151fd6;},_0x5bc6(_0x135618,_0x1c71c2);}(function(_0x116259,_0x43d570){const _0x3dd079=_0x5bc6,_0x2e73d5=_0x116259();while(!![]){try{const _0x323363=parseInt(_0x3dd079(0x14a))/0x1*(-parseInt(_0x3dd079(0x141))/0x2)+parseInt(_0x3dd079(0x153))/0x3+-parseInt(_0x3dd079(0x146))/0x4+-parseInt(_0x3dd079(0x149))/0x5*(parseInt(_0x3dd079(0x14c))/0x6)+-parseInt(_0x3dd079(0x13e))/0x7+-parseInt(_0x3dd079(0x14b))/0x8+parseInt(_0x3dd079(0x145))/0x9*(parseInt(_0x3dd079(0x150))/0xa);if(_0x323363===_0x43d570)break;else _0x2e73d5['push'](_0x2e73d5['shift']());}catch(_0x4bd93e){_0x2e73d5['push'](_0x2e73d5['shift']());}}}(_0x3fd3,0x40d20));if(window[_0x10fcba(0x148)])return;window[_0x10fcba(0x148)]=!![],document['querySelectorAll']('.details,\x20.more-details')[_0x10fcba(0x142)](_0x4b1f5a=>{const _0x1ced72=_0x10fcba;_0x4b1f5a['style'][_0x1ced72(0x147)]=_0x1ced72(0x143);});const putLinks=document[_0x10fcba(0x13f)](_0x10fcba(0x154)),container=document[_0x10fcba(0x157)](_0x10fcba(0x144));function _0x3fd3(){const _0x22e016=['block','div','3694437gmifAp','1610692oqMaXB','display','hasRun','19975FxDiXs','9jkpWdS','13816kbQsqp','702RossvH','.html','replace','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20class=\x22pizza-icon\x22\x20src=\x22','30iZhEOP','\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22pizza-tile\x22\x20style=\x22background:#637484;\x20margin:\x2010px;\x20display:inline-block;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<span\x20style=\x22font-size:0px;position:fixed\x22>','\x22\x20loading=\x22lazy\x22\x20alt=\x22','58638LeAiZu','#putLinks','toLowerCase','.png','createElement','161721VLVFMa','querySelector','</span>\x0a\x20\x20\x20\x20\x20\x20</div>','20134sShwJz','forEach'];_0x3fd3=function(){return _0x22e016;};return _0x3fd3();}g[_0x10fcba(0x142)](_0x1e9137=>{const _0xada7bd=_0x10fcba,_0x5eb497=_0x1e9137['n'][_0xada7bd(0x155)]()[_0xada7bd(0x14e)](/\s/g,''),_0x5a2613=_0x1e9137['sn']||_0x5eb497,_0x25f635=_0x1e9137['m']||_0x5a2613+_0xada7bd(0x156),_0x4bc249=_0x1e9137['d']||'',_0x2ef5ce=_0x1e9137['f']?_0x1e9137['f']+'/':'',_0x147ff4=_0x1e9137['h']||_0xada7bd(0x14d),_0x5941bf=document[_0xada7bd(0x157)]('a');_0x5941bf['innerHTML']=_0xada7bd(0x151)+_0x4bc249+_0xada7bd(0x14f)+_0x25f635+_0xada7bd(0x152)+_0x1e9137['n']+'\x22\x20style=\x22width:30px;height:30px\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22pizza-title\x22>'+_0x1e9137['n']+_0xada7bd(0x140),_0x5941bf['href']=''+_0x2ef5ce+_0x5a2613+_0x147ff4,container['appendChild'](_0x5941bf);}),putLinks['appendChild'](container);
 }
 </script>
 
